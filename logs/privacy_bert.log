@@ -1,0 +1,65 @@
+BERT LOGS
+/opt/ohpc/apps/python/3.10.pytorch/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Dataset({
+    features: ['Query', 'Segment', '__index_level_0__'],
+    num_rows: 10000
+})
+Dataset({
+    features: ['Query', 'Segment', '__index_level_0__'],
+    num_rows: 1000
+})
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/csehome/m22cs057/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2674: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+/csehome/m22cs057/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2674: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+/csehome/m22cs057/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1141: UserWarning: Using the model-agnostic default `max_length` (=20) to control the generation length. We recommend setting `max_new_tokens` to control the maximum length of the generation.
+  warnings.warn(
+
+  0%|          | 0/32 [00:00<?, ?it/s]
+  6%|▋         | 2/32 [00:00<00:10,  2.88it/s]
+  9%|▉         | 3/32 [00:01<00:14,  2.06it/s]
+ 12%|█▎        | 4/32 [00:01<00:14,  1.88it/s]
+ 16%|█▌        | 5/32 [00:02<00:14,  1.85it/s]
+ 19%|█▉        | 6/32 [00:03<00:14,  1.83it/s]
+ 22%|██▏       | 7/32 [00:03<00:14,  1.68it/s]
+ 25%|██▌       | 8/32 [00:04<00:14,  1.71it/s]
+ 28%|██▊       | 9/32 [00:04<00:13,  1.73it/s]
+ 31%|███▏      | 10/32 [00:05<00:12,  1.75it/s]
+ 34%|███▍      | 11/32 [00:06<00:11,  1.76it/s]
+ 38%|███▊      | 12/32 [00:06<00:11,  1.77it/s]
+ 41%|████      | 13/32 [00:07<00:10,  1.77it/s]
+ 44%|████▍     | 14/32 [00:07<00:10,  1.77it/s]
+ 47%|████▋     | 15/32 [00:08<00:09,  1.78it/s]
+ 50%|█████     | 16/32 [00:08<00:09,  1.78it/s]
+ 53%|█████▎    | 17/32 [00:09<00:08,  1.78it/s]
+ 56%|█████▋    | 18/32 [00:09<00:07,  1.78it/s]
+ 59%|█████▉    | 19/32 [00:10<00:07,  1.78it/s]
+ 62%|██████▎   | 20/32 [00:11<00:06,  1.78it/s]
+ 66%|██████▌   | 21/32 [00:11<00:06,  1.78it/s]
+ 69%|██████▉   | 22/32 [00:12<00:05,  1.78it/s]
+ 72%|███████▏  | 23/32 [00:12<00:05,  1.78it/s]
+ 75%|███████▌  | 24/32 [00:13<00:04,  1.78it/s]
+ 78%|███████▊  | 25/32 [00:13<00:03,  1.78it/s]
+ 81%|████████▏ | 26/32 [00:14<00:03,  1.78it/s]
+ 84%|████████▍ | 27/32 [00:15<00:02,  1.78it/s]
+ 88%|████████▊ | 28/32 [00:15<00:02,  1.78it/s]
+ 91%|█████████ | 29/32 [00:16<00:01,  1.78it/s]
+ 94%|█████████▍| 30/32 [00:16<00:01,  1.78it/s]
+ 97%|█████████▋| 31/32 [00:17<00:00,  1.78it/s]
+100%|██████████| 32/32 [00:17<00:00,  2.10it/s]
+100%|██████████| 32/32 [00:17<00:00,  1.82it/s]
+
+Map:   0%|          | 0/1000 [00:00<?, ? examples/s]
+Map:  41%|████      | 412/1000 [00:00<00:00, 4083.59 examples/s]
+Map:  86%|████████▌ | 856/1000 [00:00<00:00, 4287.94 examples/s]
+Map: 100%|██████████| 1000/1000 [00:00<00:00, 3880.29 examples/s]
+
+{'Query': 'is my chat here with the platform confidential?', 'prediction_text': 'at fiverr we care about your privacy'}
+{'Query': 'is my chat here with the platform confidential?', 'Segment': 'At Fiverr we care about your privacy.'}
+
+{'exact_match': 29.873982672617483, 'f1': 67.58633914417705}
+{'bleu': tensor(0.643), 'sacre_bleu_score': tensor(0.6571)}
